@@ -1,22 +1,32 @@
 <section class="min-h-screen flex items-center justify-center px-6 pt-20">
    <div class="max-w-4xl mx-auto text-center">
       <div
-         class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-full px-4 py-2 mb-8"
+         class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-full px-4 py-2 mb-6"
       >
-         <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
-         <span class="text-sm text-zinc-400">Open Source & Free</span>
+         <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+         <span class="text-sm text-zinc-400 font-medium"
+            >Open Source & Free</span
+         >
       </div>
 
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+      <h2
+         class="text-2xl md:text-3xl font-bold bg-clip-text bg-linear-to-r text-emerald-400 mb-2 tracking-wide uppercase"
+      >
+         Lyrics Overlay
+      </h2>
+
+      <h1
+         class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white"
+      >
          Lyrics on your screen,
          <br />
          <span class="text-emerald-500">always visible</span>
       </h1>
 
-      <p class="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto">
+      <p class="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
          A floating overlay that displays synchronized lyrics from YouTube
-         Music. Customize colors, size, and transparency. Works with
-         BetterLyrics.
+         Music. Customize colors, size, and transparency.
+         <span class="text-zinc-300">Powered by BetterLyrics.</span>
       </p>
 
       <div
@@ -24,7 +34,7 @@
       >
          <a
             href="#downloads"
-            class="bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-8 py-3 rounded-lg transition-colors flex items-center gap-2"
+            class="bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-8 py-3 rounded-lg transition-all hover:scale-105 flex items-center gap-2 shadow-lg shadow-emerald-900/20"
          >
             <svg
                class="w-5 h-5"
@@ -39,12 +49,12 @@
                   d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                ></path>
             </svg>
-            Download
+            Download Now
          </a>
          <a
-            href="https://github.com/YOUR_USERNAME/lyrics-overlay"
+            href="https://github.com/ChristianPE1/lyrics-overlay"
             target="_blank"
-            class="bg-zinc-800 hover:bg-zinc-700 text-white font-medium px-8 py-3 rounded-lg transition-colors flex items-center gap-2"
+            class="bg-zinc-800 hover:bg-zinc-700 text-white font-medium px-8 py-3 rounded-lg transition-all hover:scale-105 flex items-center gap-2 border border-zinc-700"
          >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                <path
@@ -57,29 +67,37 @@
          </a>
       </div>
 
-      <!-- App Preview -->
-      <div class="relative max-w-xl mx-auto">
+      <div class="relative max-w-md mx-auto mb-16">
          <div
-            class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-2xl"
+            class="absolute -inset-1 bg-linear-to-r from-emerald-600 to-cyan-600 rounded-2xl blur opacity-25"
          >
-            <div class="flex items-center justify-between mb-4">
-               <div class="flex items-center gap-2">
-                  <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                  <span class="text-xs text-zinc-500">Connected</span>
+         </div>
+
+         <div class="relative max-w-xl mx-auto mb-16">
+            <div
+               class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-2xl"
+            >
+               <div class="flex flex-row items-center justify-between mb-4">
+                  <div class="flex items-center justify-center gap-2">
+                     <div
+                        class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"
+                     >
+                     </div>
+                  </div>
+                  <p class="text-xs text-zinc-600 hidden sm:block">
+                     Your Favorite Song - Artist Name
+                  </p>
+                  <div class="flex gap-1">
+                     <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                     <div class="w-3 h-3 bg-amber-400 rounded-full"></div>
+                     <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                  </div>
                </div>
-               <div class="flex gap-1">
-                  <div class="w-3 h-3 bg-zinc-700 rounded-full"></div>
-                  <div class="w-3 h-3 bg-zinc-700 rounded-full"></div>
-                  <div class="w-3 h-3 bg-zinc-700 rounded-full"></div>
-               </div>
+               <p class="text-2xl font-semibold mb-2 text-white">
+                  And I think I'm gonna love you
+               </p>
+               <p class="text-sm text-zinc-500">For a long, long time</p>
             </div>
-            <p class="text-xs text-zinc-600 mb-2">
-               Now Playing: Your Favorite Song - Artist Name
-            </p>
-            <p class="text-2xl font-semibold mb-2">
-               And I think I'm gonna love you
-            </p>
-            <p class="text-sm text-zinc-500">For a long, long time</p>
          </div>
       </div>
    </div>

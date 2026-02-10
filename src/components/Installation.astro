@@ -1,20 +1,19 @@
-<section id="guides" class="py-24 px-6">
+<section id="guides" class="py-24 px-6 bg-zinc-900">
    <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-         <h2 class="text-3xl md:text-4xl font-bold mb-4">
+         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
             Installation Guides
          </h2>
          <p class="text-zinc-400 max-w-xl mx-auto">
-            Step-by-step instructions for each platform.
+            Follow these steps to get everything up and running.
          </p>
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-8">
-         <!-- Windows Guide -->
-         <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+         <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
             <div class="flex items-center gap-3 mb-6">
                <svg
-                  class="w-6 h-6 text-blue-400"
+                  class="w-8 h-8 text-blue-500"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                >
@@ -22,216 +21,233 @@
                      d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"
                   ></path>
                </svg>
-               <h3 class="text-xl font-semibold">Windows</h3>
+               <h3 class="text-2xl font-semibold text-white">Windows</h3>
             </div>
 
-            <div class="space-y-4 text-sm">
-               <div class="flex gap-3">
+            <div class="space-y-5 text-sm">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >1</span
                   >
-                  <p class="text-zinc-400">
-                     Download and install <a
-                        href="https://nodejs.org"
-                        target="_blank"
-                        class="text-emerald-400 hover:underline">Node.js</a
-                     > (LTS version)
-                  </p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Prerequisites</p>
+                     <p class="text-zinc-400 mt-1">
+                        Install <a
+                           href="https://nodejs.org"
+                           target="_blank"
+                           class="text-blue-400 hover:underline">Node.js</a
+                        > (LTS) and the <a
+                           href="https://better-lyrics.boidu.dev"
+                           target="_blank"
+                           class="text-blue-400 hover:underline">BetterLyrics</a
+                        > extension.
+                     </p>
+                  </div>
                </div>
-               <div class="flex gap-3">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >2</span
                   >
-                  <p class="text-zinc-400">
-                     Install <a
-                        href="https://better-lyrics.boidu.dev"
-                        target="_blank"
-                        class="text-emerald-400 hover:underline">BetterLyrics</a
-                     > extension
-                  </p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Download & Extract</p>
+                     <p class="text-zinc-400 mt-1">
+                        Download the ZIP file and extract it. Run <code
+                           class="bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200"
+                           >Lyrics Overlay Setup.exe</code
+                        >.
+                     </p>
+                  </div>
                </div>
-               <div class="flex gap-3">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >3</span
                   >
-                  <p class="text-zinc-400">
-                     Download the MSI installer or portable ZIP
-                  </p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Install Connector</p>
+                     <p class="text-zinc-400 mt-1">
+                        Go to <code
+                           class="bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200"
+                           >chrome://extensions</code
+                        >, enable Developer Mode, and "Load Unpacked" the <code
+                           class="text-zinc-300">extension</code
+                        > folder from the ZIP.
+                     </p>
+                  </div>
                </div>
-               <div class="flex gap-3">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >4</span
                   >
-                  <p class="text-zinc-400">
-                     Extract the extension ZIP and load in Chrome via <code
-                        class="bg-zinc-800 px-1 rounded"
-                        >chrome://extensions</code>
-                  </p>
-               </div>
-               <div class="flex gap-3">
-                  <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
-                     >5</span
-                  >
-                  <p class="text-zinc-400">
-                     Run <code class="bg-zinc-800 px-1 rounded"
-                        >Start Lyrics Overlay.bat</code
-                     > (portable) or launch from Start Menu
-                  </p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Start Server</p>
+                     <p class="text-zinc-400 mt-1">
+                        Double-click <code
+                           class="bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200"
+                           >start-server.bat</code
+                        > inside the folder. Keep the window open.
+                     </p>
+                  </div>
                </div>
             </div>
          </div>
 
-         <!-- macOS Guide -->
-         <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+         <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
             <div class="flex items-center gap-3 mb-6">
                <svg
-                  class="w-6 h-6 text-zinc-300"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-               >
-                  <path
-                     d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
-                  ></path>
-               </svg>
-               <h3 class="text-xl font-semibold">macOS</h3>
-            </div>
-
-            <div class="space-y-4 text-sm">
-               <div class="flex gap-3">
-                  <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
-                     >1</span
-                  >
-                  <p class="text-zinc-400">
-                     Download and install <a
-                        href="https://nodejs.org"
-                        target="_blank"
-                        class="text-emerald-400 hover:underline">Node.js</a
-                     > (LTS version)
-                  </p>
-               </div>
-               <div class="flex gap-3">
-                  <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
-                     >2</span
-                  >
-                  <p class="text-zinc-400">
-                     Install <a
-                        href="https://better-lyrics.boidu.dev"
-                        target="_blank"
-                        class="text-emerald-400 hover:underline">BetterLyrics</a
-                     > extension
-                  </p>
-               </div>
-               <div class="flex gap-3">
-                  <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
-                     >3</span
-                  >
-                  <p class="text-zinc-400">Download and open the DMG file</p>
-               </div>
-               <div class="flex gap-3">
-                  <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
-                     >4</span
-                  >
-                  <p class="text-zinc-400">
-                     Drag Lyrics Overlay to Applications folder
-                  </p>
-               </div>
-               <div class="flex gap-3">
-                  <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
-                     >5</span
-                  >
-                  <p class="text-zinc-400">
-                     Load extension in Chrome and start the server with <code
-                        class="bg-zinc-800 px-1 rounded">npm start</code
-                     > in server folder
-                  </p>
-               </div>
-            </div>
-         </div>
-
-         <!-- Linux Guide -->
-         <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
-            <div class="flex items-center gap-3 mb-6">
-               <svg
-                  class="w-6 h-6 text-yellow-400"
+                  class="w-8 h-8 text-yellow-500"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                >
                   <path
                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
                   ></path>
-                  <circle cx="8" cy="10" r="1"></circle>
-                  <circle cx="16" cy="10" r="1"></circle>
-                  <path d="M12 18c2.21 0 4-1.79 4-4H8c0 2.21 1.79 4 4 4z"
-                  ></path>
                </svg>
-               <h3 class="text-xl font-semibold">Linux</h3>
+               <h3 class="text-2xl font-semibold text-white">Linux</h3>
             </div>
 
-            <div class="space-y-4 text-sm">
-               <div class="flex gap-3">
+            <div class="space-y-5 text-sm">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-yellow-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >1</span
                   >
-                  <p class="text-zinc-400">
-                     Install Node.js via package manager or <a
-                        href="https://nodejs.org"
-                        target="_blank"
-                        class="text-emerald-400 hover:underline">nvm</a>
-                  </p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Prerequisites</p>
+                     <p class="text-zinc-400 mt-1">
+                        Install <a
+                           href="https://nodejs.org"
+                           target="_blank"
+                           class="text-yellow-400 hover:underline">Node.js</a
+                        > and <a
+                           href="https://better-lyrics.boidu.dev"
+                           target="_blank"
+                           class="text-yellow-400 hover:underline"
+                           >BetterLyrics</a
+                        >.
+                     </p>
+                  </div>
                </div>
-               <div class="flex gap-3">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-yellow-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >2</span
                   >
-                  <p class="text-zinc-400">
-                     Install <a
-                        href="https://better-lyrics.boidu.dev"
-                        target="_blank"
-                        class="text-emerald-400 hover:underline">BetterLyrics</a
-                     > extension
-                  </p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Install App</p>
+                     <p class="text-zinc-400 mt-1">
+                        Extract the ZIP. Install the <code
+                           class="bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200"
+                           >.deb</code
+                        > package (Ubuntu/Debian) or build from source (Arch).
+                     </p>
+                  </div>
                </div>
-               <div class="flex gap-3">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-yellow-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >3</span
                   >
-                  <p class="text-zinc-400">Download AppImage or DEB package</p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Install Connector</p>
+                     <p class="text-zinc-400 mt-1">
+                        Load the <code class="text-zinc-300">extension</code> folder
+                        in your browser's extension settings (Developer Mode).
+                     </p>
+                  </div>
                </div>
-               <div class="flex gap-3">
+               <div class="flex gap-4">
                   <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
+                     class="w-6 h-6 bg-yellow-600 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white"
                      >4</span
                   >
-                  <p class="text-zinc-400">
-                     Make AppImage executable: <code
-                        class="bg-zinc-800 px-1 rounded"
-                        >chmod +x *.AppImage</code>
-                  </p>
+                  <div>
+                     <p class="text-zinc-300 font-medium">Start Server</p>
+                     <p class="text-zinc-400 mt-1">
+                        Run <code
+                           class="bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-200"
+                           >./start-server.sh</code
+                        > in your terminal.
+                     </p>
+                  </div>
                </div>
-               <div class="flex gap-3">
-                  <span
-                     class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0 text-xs font-bold"
-                     >5</span
-                  >
-                  <p class="text-zinc-400">
-                     Load extension and run <code
-                        class="bg-zinc-800 px-1 rounded"
-                        >node server/server.js</code>
+            </div>
+         </div>
+         <div
+            id="build-guide"
+            class="mt-16 bg-zinc-950 border border-zinc-800 rounded-xl p-8 max-w-4xl mx-auto"
+         >
+            <div class="flex items-center gap-3 mb-6">
+               <svg
+                  class="w-6 h-6 text-purple-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+               >
+                  <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+               </svg>
+               <h3 class="text-xl font-semibold text-white">
+                  Building from Source (macOS)
+               </h3>
+            </div>
+
+            <p class="text-zinc-400 mb-6 text-sm">
+               Since we don't have a pre-built installer for macOS yet, you can
+               easily build and run the app yourself. Requires <a
+                  href="https://nodejs.org"
+                  class="text-purple-400 hover:underline">Node.js</a
+               > and <a
+                  href="https://www.rust-lang.org/tools/install"
+                  class="text-purple-400 hover:underline">Rust</a
+               >.
+            </p>
+
+            <div
+               class="bg-black/50 rounded-lg p-4 font-mono text-sm text-zinc-300 overflow-x-auto border border-zinc-800"
+            >
+               <div class="flex flex-col gap-2">
+                  <p class="text-zinc-500"># 1. Clone the repository</p>
+                  <p>
+                     git clone
+                     https://github.com/christianpe1/lyrics-overlay.git
                   </p>
+                  <p>cd lyrics-overlay</p>
+
+                  <p class="text-zinc-500 mt-2"># 2. Install dependencies</p>
+                  <p>npm install</p>
+                  <p>cd server && npm install && npm start</p>
+
+                  <p class="text-zinc-500 mt-2"># 3. Run in development mode (On another terminal)</p>
+                  <p class="text-purple-400">npm run tauri dev</p>
                </div>
+            </div>
+
+            <div class="mt-4 flex items-start gap-2 text-xs text-zinc-500">
+               <svg
+                  class="w-4 h-4 shrink-0 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+               >
+                  <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+               </svg>
+               <p>
+                  Note: On macOS, you might need to install Xcode Command Line
+                  Tools. The server must be running (`cd server && npm start`)
+                  in a separate terminal if you are in dev mode.
+               </p>
             </div>
          </div>
       </div>
